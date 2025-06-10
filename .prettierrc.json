@@ -1,1 +1,5 @@
-"prettier-config-standard"
+{
+  "singleQuote": false,
+  "tabWidth": 2,
+  "semi": true
+}
