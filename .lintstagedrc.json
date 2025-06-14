@@ -1,4 +1,4 @@
 {
-  "*.ts": ["pnpm eslint --ext .ts --fix", "git add ."],
-  "*.tsx": ["pnpm eslint --ext .tsx --fix", "git add ."]
+  "*.ts": ["pnpm eslint --ext .ts --fix"],
+  "*.tsx": ["pnpm eslint --ext .tsx --fix"]
 }
