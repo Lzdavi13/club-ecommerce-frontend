@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Colors from "../../theme/theme.colors";
 
-interface CategoryItemContainerProps{
-  backgroundImage: string
+interface CategoryItemContainerProps {
+  backgroundImage: string;
 }
 
 export const CategoryItemContainer = styled.div<CategoryItemContainerProps>`
@@ -25,19 +25,19 @@ export const CategoryItemContainer = styled.div<CategoryItemContainerProps>`
 export const CategoryName = styled.div`
   color: ${Colors.text.white};
   text-align: center;
-  background-color: #E9ECEF73;
+  background-color: #e9ecef73;
   padding: 10px 30px;
   border-radius: 10px;
   border: 1px solid ${Colors.primary};
   box-shadow: 0px 4px 4px #000000;
   transition: all 0.5s ease;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     background-color: #e9ecef;
   }
 
-  & p:nth-child(1){
+  & p:nth-child(1) {
     font-weight: 600;
   }
 `;
