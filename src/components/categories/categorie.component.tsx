@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./categories.styles.css";
 import { type Category } from "../../types/category.type";
 import { categoriesData } from "../../data/categories";
+import CategoryItem from "../category-item/category-item.component";
 
 function Categories() {
   const [categories, setCategories] = useState<Category[]>([]);
@@ -20,9 +21,9 @@ function Categories() {
   return (
     <div className="categories-container">
       <div className="categories-content">
-        {/* {categories.map((category)=>{
-          <CategoryItem key={category.id}/>
-        })} */}
+        {categories.map((category) => {
+          return <CategoryItem key={category.id} category={category} />;
+        })}
       </div>
     </div>
   );
