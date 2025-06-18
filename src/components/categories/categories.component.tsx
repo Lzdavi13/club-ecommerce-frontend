@@ -7,7 +7,6 @@ import { CategoriesContainer, CategoriesContent } from "./categories.styles";
 function Categories() {
   const [categories, setCategories] = useState<Category[]>([]);
 
-  console.log(categories);
   async function fecthCategories() {
     new Promise((resolve) => setTimeout(resolve, 1000));
 
@@ -21,8 +20,8 @@ function Categories() {
   return (
     <CategoriesContainer>
       <CategoriesContent>
-        {categories.map((category) => {
-          return <CategoryItem key={category.id} category={category} />;
+        {categories.map((category)=>{
+          return <CategoryItem key={category.id} category={category}/>
         })}
       </CategoriesContent>
     </CategoriesContainer>
