@@ -20,8 +20,8 @@ function Categories() {
   return (
     <CategoriesContainer>
       <CategoriesContent>
-        {categories.map((category)=>{
-          return <CategoryItem key={category.id} category={category}/>
+        {categories.map((category) => {
+          return <CategoryItem key={category.id} category={category} />;
         })}
       </CategoriesContent>
     </CategoriesContainer>
