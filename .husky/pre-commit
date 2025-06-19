@@ -1,10 +1,10 @@
-echo 'Verificando erros de linting...'
-
-pnpm lint-staged ||
-(echo 'Erros de linting ou testes falharam. Corrija-os antes de confirmar.' && exit 1)
-
 echo 'Ajustando estilos de codigo⭐'
 pnpm format ||
 (echo 'Erros de estilos falharam. Corrija-os antes de confirmar.' && exit 1)
 
 echo 'Concluido✅'
+
+echo 'Verificando erros de linting...'
+
+pnpm lint-staged ||
+(echo 'Erros de linting ou testes falharam. Corrija-os antes de confirmar.' && exit 1)
